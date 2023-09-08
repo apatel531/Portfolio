@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- Header Starts -->
+    <header class="navbar">
+        <div class="user">
+          <h2></h2>
+        </div>
+        <nav class="navItem">
+          <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="download-btn" download="ARYA-RESUME.pdf" href="./assets/documents/Prof Resume.pdf"><i class="uil uil-import"></i>Download Resume <i class="fa-solid fa-download"></i></button></a>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Image Div Starts -->
+
+    <div class="home">
+        <div class="userImageBlock">
+            <img
+              src="./assets/images/img.jpeg"
+              width="300px"
+              height="200px"
+              class="image"
+            />
+        </div>
+        <div class="userContent">
+            <h3>Hi There!</h3>
+            <h1>I Am <span>Arya Patel</span></h1>
+            <p>Future Software Engineer</p>
+            <a href="#about"><button class="about-btn">About Me <i class="fa-solid fa-user"></i></button></a>
+        </div>
+  
+    </div>
+
+    <!-- Image Div Ends -->
+
+    <!-- About Me Starts -->
+    <div id="about" class="aboutMeDiv">
+      <h3 class="title">About Me</h3>
+      <hr class="hr" />
+      <div class="aboutMeContent">
+        <div class="aboutMeTable">
+            <table class="styled-table">
+                <tbody>
+                    <tr>
+                        <td><b>AGE:</td>
+                        <td class="aboutDetails">19</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>EMAIL:</td>
+                        <td class="aboutDetails">aryapatel3136@gmail.ca</td>
+                    </tr>
+                    
+                    
+                    <tr class="active-row">
+                        <td><b>LANGUAGES:</td>
+                        <td class="aboutDetails">English, Hindi, Gujarati</td>
+                    </tr>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>Hobbies:</td>
+                        <td class="aboutDetails">Playing Badminton, Playing Video Games, Reading Books, Observing Astronomical objects at midnight.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="aboutMeText">
+
+        
+          Hey there! I'm Arya Patel, and I recently completed computer programming at Seneca College. My father bought me a computer when I was 10 years old, which sparked my interest in computers. As time went on, my interest in computer science grew steadily. I gained knowledge of a variety of programming languages, including Javascript, Python, Java, C, and C++.
+        </div>
+      </div>
+    </div>
+    <!-- About Me Ends -->
+
+    <!-- Education Starts -->
+    <div id="education" class="education-container">
+      <h3 class="title">Education</h3>
+      <hr class="hr" />
+      <div class="years-div">
+        <div id="2018" class="circle-div selected" onclick="handleEducationChange(event)">
+          2019
+        </div>
+        <i class="fa-solid fa-greater-than"></i>
+        <div id="2020" class="circle-div" onclick="handleEducationChange(event)">
+          2021
+        </div>
+        <i class="fa-solid fa-greater-than"></i>
+        <div id="2022" class="circle-div" onclick="handleEducationChange(event)">
+          2022
+        </div>
+      </div>
+
+      <div class="education-detail">
+        <div class="education-image-container">
+          <img class="edu-image" src="./assets/images/Anand.jpg" alt="Anand Niketan School">
+        </div>
+        <div class="education-description">
+            <span class="edu-title">10th Grade</span>
+            <span class="edu-name">Anand Niketan School, Mehsana</span>
+            <span class="edu-desc">I passed my secondary school in the year of 2018-19 with A+ grade.</span>
+        </div>
+      </div>
+    </div>
+    <!-- Education Ends -->
+
+    <!-- Skills Starts -->
+
+    <div id="skills" class="skillsDiv">
+      <h3 class="title">My programming Skills</h3>
+      <hr class="hr" />
+      <div class="boxesDiv">
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/html.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">HTML</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/css.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">CSS</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/js.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Javascript</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/python.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Python</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/java.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Java</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/c.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">C</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/cpp.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">C++</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/mysql.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">MySQL</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/oracle.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Oracle</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Skills Ends -->
+
+    
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
