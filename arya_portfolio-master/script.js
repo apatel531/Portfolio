@@ -66,7 +66,7 @@ const handleEducationChange = (event) => {
         eduImage.src = "./assets/images/Seneca.jpg";
         eduTitle.innerText = "Computer Programming";
         eduName.innerText = "Seneca college, Newnham campus";
-        eduDesc.innerText = "Recently I completed Computer programming at seneca college";
+        eduDesc.innerText = "Recently I completed my Computer programming diploma at Seneca college";
     }else {
         eduImage.src = "./assets/images/KV.jpg";
         eduTitle.innerText = "12th Grade";
